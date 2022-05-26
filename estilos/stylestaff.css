@@ -1,0 +1,102 @@
+/*Limpar formatações padrão*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #e6e6e6;
+}
+
+/*
+**** Layout ****
+*/
+#area-cabecalho {
+	background-color: #0088a3; /* fundo azul do menu */
+	padding: 15px; 
+	text-align: center; /* menu centralizado */
+}
+
+#area-logo, #area-menu {
+	padding: 10px; /* espaço entre TecLogo e os botões do menu (links) */
+}
+
+
+#rodape {
+	clear: both; /* removeo fluxo dos elementos flutuantes */
+	text-align: center;
+	padding: 15px;
+	background: #CCC;
+}
+
+
+/*
+**** Formatação do menu ****
+Cores dos links
+*/
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited { /* todos os links fora de area cabecalho */
+	color: #0088a3;
+}
+
+a:hover {
+	text-decoration: underline;
+} 
+
+#area-cabecalho a:link, #area-cabecalho a:visited { /* formatação nos links dentro de area cabecalho */
+	color: #FFF;
+	padding: 8px 12px;
+}
+
+#area-cabecalho a:hover {
+	color: #f7b600;
+	background: #FFF;
+	text-decoration: none; /* se não definir text-decoration com none, hover vai receber underline pois foi definido para todos os links */
+}
+
+/*
+**** Formatações em geral ****
+*/
+h1 {
+	color: #0088a3;
+	font-size: 2.5em;
+}
+
+h2 {
+	color: #0088a3;
+}
+
+h3 {
+	color: #0088a3;
+	background: #CCC;
+	padding: 5px;
+}
+
+.branco{
+	color: white;
+}
+
+.preto{
+	color: black;
+}
+
+.postagem{
+	padding: 18px;
+	margin-bottom: 3px;
+	background: white;
+}
+
+.data-postagem {
+	font-size: 0.8em;
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+
